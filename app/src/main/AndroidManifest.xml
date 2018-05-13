@@ -20,7 +20,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".Activities.modeActivity" />
-        <activity android:name=".Activities.SettingActivity"></activity>
+        <activity android:name=".Activities.SettingActivity" />
+        <activity android:name=".Activities.HabitChartActivity"></activity>
     </application>
 
 </manifest>

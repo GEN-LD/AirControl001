@@ -61,6 +61,14 @@ public class MainActivity extends AppCompatActivity
                 startActivity(intent);
             }
         });
+        Button chart = (Button)findViewById(R.id.chart);
+        chart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,HabitChartActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     @Override
