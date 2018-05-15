@@ -16,7 +16,7 @@ import java.util.List;
 /**
  * Created by dgliang on 2018/5/11.
  */
-
+//情景模式适配器
 public class ModeAdapter extends ArrayAdapter<modeControl>{
     private int modeId;
 
