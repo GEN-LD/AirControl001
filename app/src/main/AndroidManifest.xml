@@ -21,7 +21,17 @@
         </activity>
         <activity android:name=".Activities.modeActivity" />
         <activity android:name=".Activities.SettingActivity" />
-        <activity android:name=".Activities.HabitChartActivity"></activity>
+        <activity android:name=".Activities.HabitChartActivity" />
+
+        <receiver android:name=".Activities.DesktopAppWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/desktop_app_widget_info" />
+        </receiver>
     </application>
 
 </manifest>
