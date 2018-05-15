@@ -6,12 +6,33 @@
     android:layout_height="match_parent"
     tools:context="com.scut.toothpick.aircontrol001.Activities.HabitChartActivity">
 
-    <com.github.mikephil.charting.charts.LineChart
-        android:id="@+id/lineChart"
-        android:layout_width="320dp"
-        android:layout_height="320dp"
-        android:layout_margin="10dp"
-        android:padding="10dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
 
+        <Button
+            android:id="@+id/changeChart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="切换图表"/>
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/lineChart"
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:visibility="gone"/>
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/barchart"
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:visibility="visible"/>
+
+    </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
