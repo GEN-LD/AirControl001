@@ -4,12 +4,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
 import com.scut.toothpick.aircontrol001.R;
-import com.scut.toothpick.aircontrol001.other.SettingAdapter;
+import com.scut.toothpick.aircontrol001.Adapter.SettingAdapter;
 import com.scut.toothpick.aircontrol001.other.SettingItem;
 
 import java.util.ArrayList;

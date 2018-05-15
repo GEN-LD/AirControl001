@@ -62,20 +62,25 @@ public class HabitChartActivity extends AppCompatActivity {
         }
         LineDataSet lineDataSet = new LineDataSet(entries,"测试图表");
         lineDataSet.setColor(Color.parseColor("#d04ff4"));
+        lineDataSet.setLineWidth(2.5f);//设置线条宽度
+        lineDataSet.setCircleSize(4.5f);//设置原点直径
+        lineDataSet.setValueTextSize(10f);
+
         String[] xval = {"一月","二月","三月","四月","五月","六月","七月","八月"};
         LineData lineData = new LineData(xval,lineDataSet);
         lineChart.setData(lineData);
+
         //设置图表外观
         lineChart.setDrawBorders(false);
         lineChart.setScaleEnabled(false);   //是否可以缩放XY轴
         XAxis xAxis = lineChart.getXAxis();
         xAxis.setDrawGridLines(false);
         xAxis.setPosition(XAxis.XAxisPosition.BOTTOM);//设置X轴数据位置
+
         YAxis yAxis0 = lineChart.getAxisLeft();
         YAxis yAxis1 = lineChart.getAxisRight();
-        yAxis1.setDrawAxisLine(false);//绘制轴线
         yAxis0.setDrawGridLines(false);//绘制网格线
-        yAxis1.setDrawGridLines(false);
+        yAxis1.setEnabled(false);
         return lineChart;
     }
     /*

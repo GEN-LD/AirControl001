@@ -1,4 +1,4 @@
-package com.scut.toothpick.aircontrol001.other;
+package com.scut.toothpick.aircontrol001.Adapter;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
@@ -10,6 +10,7 @@ import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
 import com.scut.toothpick.aircontrol001.R;
+import com.scut.toothpick.aircontrol001.other.SettingItem;
 
 import java.util.List;
 

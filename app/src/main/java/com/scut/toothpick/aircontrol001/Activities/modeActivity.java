@@ -8,7 +8,7 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import com.scut.toothpick.aircontrol001.R;
-import com.scut.toothpick.aircontrol001.other.ModeAdapter;
+import com.scut.toothpick.aircontrol001.Adapter.ModeAdapter;
 import com.scut.toothpick.aircontrol001.other.modeControl;
 
 import java.util.ArrayList;

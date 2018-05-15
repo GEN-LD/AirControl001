@@ -12,26 +12,26 @@
         android:orientation="vertical"
         android:layout_margin="10dp">
 
-        <Button
-            android:id="@+id/changeChart"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAllCaps="false"
-            android:text="切换图表"/>
         <com.github.mikephil.charting.charts.LineChart
             android:id="@+id/lineChart"
             android:layout_width="match_parent"
-            android:layout_height="320dp"
+            android:layout_height="290dp"
             android:layout_margin="10dp"
             android:padding="10dp"
             android:visibility="gone"/>
         <com.github.mikephil.charting.charts.BarChart
             android:id="@+id/barchart"
             android:layout_width="match_parent"
-            android:layout_height="320dp"
+            android:layout_height="290dp"
             android:layout_margin="10dp"
             android:padding="10dp"
             android:visibility="visible"/>
+        <Button
+            android:id="@+id/changeChart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="切换图表"/>
 
     </LinearLayout>
 
